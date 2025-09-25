@@ -4,7 +4,7 @@ Welcome to Repository for Data Scientist Test at Mandiri Sekuritas. Presented by
 This repository contains my solution for the Data Scientist Test at Mandiri Sekuritas.
 The project focuses on forecasting stock's daily return using Long Short-Term Memory (LSTM) and Heuristic Stock Seelection Algorithm
 
-Utilizing 225 Dataset incompanies that got in SNP500 in time range 2022-01-01 until 2024-12-31. Crawling data from yahoo finance to get historical financial features. Highlighting Performance of LSTM & Heuristic Stock Selection for Prediction %Recommendation in Daily Return target.
+Utilizing 225 Dataset incompanies that got in S&P500 in time range 2022-01-01 until 2024-12-31. Crawling data from yahoo finance to get historical financial features. Highlighting Performance of LSTM & Heuristic Stock Selection for Prediction %Recommendation in Daily Return target.
 
 This project schema is clearly following to a paper "An Advisor Neural Network framework using LSTM-based Informative Stock Analysis" with Little modified in hyperparametertuning using Bayesian Optimization.
 
