@@ -2,32 +2,39 @@
 Welcome to Repository for Data Scientist Test at Mandiri Sekuritas. Presented by Muhammad Alvero Johansyah
 
 This repository contains my solution for the Data Scientist Test at Mandiri Sekuritas.
-The project focuses on forecasting stock prices using Long Short-Term Memory (LSTM)
+The project focuses on forecasting stock's daily return using Long Short-Term Memory (LSTM) and Heuristic Stock Seelection Algorithm
 
-Utilizing 225 Dataset in every companies that got in SNP500 in time range 2022-01-01 until 2024-12-31. Crawling data from yahoo finance to get historical financial features. Highlighting Performance of LSTM & Heuristic Stock Selection for Prediction & Recommendation in Daily Return target
+Utilizing 225 Dataset incompanies that got in SNP500 in time range 2022-01-01 until 2024-12-31. Crawling data from yahoo finance to get historical financial features. Highlighting Performance of LSTM & Heuristic Stock Selection for Prediction %Recommendation in Daily Return target.
+
+This project schema is clearly following to a paper "An Advisor Neural Network framework using LSTM-based Informative Stock Analysis" with Little modified in hyperparametertuning using Bayesian Optimization.
 
 📂 Project Structure
 
-LSTM_Stock_Forecasting_Alvero_DS.ipynb → Jupyter Notebook containing data preprocessing, model training, evaluation, and visualization.
+LSTM_Stock_Forecasting_Alvero_DS.ipynb → Jupyter Notebook containing Data Ingestion, Forecasting Unit, Advice Stock Selection Unit, and Results & Visualization.
 
 Approach: 
 
-1. Data Preparation
+1. Data Ingestion
 - Load and clean stock price dataset
 - Feature engineering Seasonal Data & Technical Indicator
 - News data is not used due to limited access
 - Generate training and test splits
 - Normalize features, one-hot encoding, etc
 
-2. Modeling
+2. Forecasting Unit
 - Build an LSTM-based neural network using TensorFlow/Keras
 - Tune hyperparameters & find the best time window (sequence length, hidden units, dropout, optimizer)
+- Use metrics such as RMSE/MSE/MAE for error evaluation
 - Train and validate the model on technical and seasonal data
 
-4. Evaluation
-- Compare predicted vs actual prices
+3. Advice Unit by Heuristic Stock Selection algorithm
+- Give Best 5 Stocks based on output of LSTM in daily
 - Use metrics such as RMSE/MSE/MAE for error evaluation
-- Plot stock price forecasts to visualize performance
+- Re rolling & Re train the data after forecasting in daily to give the best forecast in other day
+
+4. Results & Visualization
+- Knowing the performance by comparing the actual daily return
+- Get to know portfolio performance return by simulating in test dataset on advice unit
 
 Tech Stack:
 - Python 3
