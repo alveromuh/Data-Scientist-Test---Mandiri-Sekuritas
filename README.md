@@ -26,7 +26,7 @@ Approach:
 
 4. Evaluation
 - Compare predicted vs actual prices
-- Use metrics such as RMSE/MAE for error evaluation
+- Use metrics such as RMSE/MSE/MAE for error evaluation
 - Plot stock price forecasts to visualize performance
 
 Tech Stack:
